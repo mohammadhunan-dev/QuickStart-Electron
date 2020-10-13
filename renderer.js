@@ -24,10 +24,7 @@ async function run() {
   };
 
   // open a non synced realm
-
   const realm = new Realm(config);
-
-  const personList = realm.objects("Person");
 
   // create a new "Person"
   realm.write(() => {
