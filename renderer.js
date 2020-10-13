@@ -6,7 +6,7 @@ async function run() {
   const realmApp = new Realm.App({ id: "tutsbrawl-qfxxj" }); // Replace <Your App ID> with your application id
   let credentials = Realm.Credentials.anonymous();
   // log in anonymously
-  let user = await realmApp.logIn(credentials);
+  await realmApp.logIn(credentials);
 
   var PersonSchema = {
     name: "Person",
